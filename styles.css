@@ -1,0 +1,333 @@
+/* universal */
+* {
+    font-family: 'Roboto Mono';
+    box-sizing: border-box;
+}
+
+
+/* indent */
+h1 {
+    margin-bottom: 0px;
+    min-width: 270px;
+}
+
+h1, p, a {
+    padding-left: 40px;
+}
+
+button {
+    margin-left: 40px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+em {
+    color: grey;
+}
+
+/* strength */
+.strength {
+    border: 1px solid black;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top: -1px; /* Overlap by 1px */
+    cursor: pointer;
+}
+
+.strength p {
+    margin: 0px;
+}
+.arrow-button {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    padding-right: 20px; /* Added padding on the right */
+}
+
+.arrow-button::after {
+    content: '';
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 5px;
+    transform: rotate(-135deg);
+}
+
+.arrow-button.clicked::after {
+    transform: rotate(45deg);
+}
+
+/* strength expanded */
+.strengthExpanded {
+    display: none; /* Hide initially */
+    padding-right: 40px;
+}
+
+.works {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute space evenly */
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .works {
+        flex-direction: column;
+  
+    }
+}
+
+.work {
+    /* border: 1px solid black; */
+    flex: 1; /* Make each .work take up equal space */
+    margin: 0; /* Remove margin from all sides */
+}
+
+figure p, figure a {
+    padding-left: 0;
+}
+
+figure img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#meDiv {
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid black;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px; */
+}
+
+#me {
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+}
+
+
+#meArticle {
+    border: 1px solid red;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#football {
+    width: 100%;
+}
+
+
+#footballDiv {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
+
+/* link */
+a {
+    margin-top: 20px;
+    color: black;
+    padding-left: 40px;
+}
+
+/* button */
+button {
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* grids */
+.grid-container, grid-container-imgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px; /* Adjust the gap as needed */
+    padding-left: 40px;
+    margin: 0 auto;
+}
+
+.grid-container-two {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px; /* Adjust the gap as needed */
+    padding-left: 40px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    /* background-color: #d9d9d9; */
+    padding: 10px; /* Adjust the padding as needed */
+    border: 1px solid black; /* Adjust the border as needed */
+    text-align: center;
+    margin-left: -1px;
+    margin-top: -1px; /* Overlap by 1px */
+    text-align: center;
+}
+
+#athleticGrid .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    margin-bottom: 20px; /* Added bottom margin */
+}
+
+
+footer p {
+    margin: 0 0;
+}
+
+/* featured work */
+.arrow-button-left {
+    background-color: transparent;
+    border: none;
+    margin-right: 0;
+    /* border: 1px solid blue; */
+}
+
+.arrow-button-left::before {
+    content: '';
+    border: solid black;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-135deg);
+}
+
+/* header {
+    display: flex;
+    align-items: flex-start;
+} */
+
+header a {
+    /* border: 1px solid red; */
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.featuredWork p {
+    padding-right: 40px;
+}
+
+/* .featuredTitle {
+    background-color: #D9D9D9;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    margin-bottom: 0;
+} */
+
+/* .featuredImgContainer {
+    border: 1px solid red;
+    width: 100%;
+} */
+
+.featuredImg {
+    width: 100%;
+}
+
+.skills {
+    color: grey;
+}
+
+
+#featuredPics {
+    margin-right: 40px;
+}
+
+.grid-item-img {
+    border: none; /* Adjust the border as needed */
+    text-align: center;
+    margin-left: -1px;
+    object-fit: contain; /* Added value for object-fit */
+}
+
+.grid-item-img img, .grid-item-img video {
+    width: 100%;
+}
+
+.press {
+    padding-left: 0;
+    color: blue;
+}
+
+
+/* -----------------IGNORE------------------ */
+
+/* portfolio */
+.portfolio {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolioNav {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    height: 100%;
+}
+
+.compass {
+    display: flex;
+    flex-direction: row;
+}
+
+.compass a {
+    padding-left: 0;
+}
+
+#filters {
+    color: grey;
+}
+
+.portfolioGrid {
+    border-left: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
