@@ -293,6 +293,12 @@ header a {
     color: blue;
 }
 
+/* youtube */
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* -----------------IGNORE------------------ */
 
