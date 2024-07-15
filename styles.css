@@ -308,40 +308,4 @@ header a {
     align-items: center;
 }
 
-/* -----------------IGNORE------------------ */
-
-/* portfolio */
-.portfolio {
-    display: flex;
-    flex-direction: row;
-}
-
-.portfolioNav {
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    padding-right: 40px;
-    height: 100%;
-}
-
-.compass {
-    display: flex;
-    flex-direction: row;
-}
-
-.compass a {
-    padding-left: 0;
-}
-
-#filters {
-    color: grey;
-}
-
-.portfolioGrid {
-    border-left: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
 
