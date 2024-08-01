@@ -9,10 +9,21 @@
 h1 {
     margin-bottom: 0px;
     min-width: 270px;
+    color: black;
+}
+
+h1 a {
+    color: black;
 }
 
 h1, p, a {
     padding-left: 40px;
+}
+
+h2 {
+    padding-left: 40px;
+    color: black;
+    font-size: 1.25em;
 }
 
 button {
@@ -30,6 +41,11 @@ video {
 em {
     color: grey;
 }
+
+#name em {
+    color: black;
+}
+
 
 /* strength */
 .strength {
@@ -92,9 +108,40 @@ em {
 }
 
 .work {
-    /* border: 1px solid black; */
     flex: 1; /* Make each .work take up equal space */
     margin: 0; /* Remove margin from all sides */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.work img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Desktop hover effect */
+@media (hover: hover) and (pointer: fine) {
+    .work:hover img {
+        transform: scale(0.95); /* Shrink the image to 95% of its original size */
+        opacity: 0.8; /* Reduce opacity to 80% */
+    }
+}
+
+/* Mobile touch effect */
+@media (hover: none) and (pointer: coarse) {
+    .work:active img {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+}
+
+/* Ensure touch targets are large enough on mobile */
+@media (max-width: 768px) {
+    .work img {
+        height: 120px;
+        width: 120px;
+    }
 }
 
 figure p, figure a {
@@ -154,7 +201,7 @@ figure img {
 /* link */
 a {
     margin-top: 20px;
-    color: black;
+    color: #0000EE;
     padding-left: 40px;
 }
 
@@ -307,5 +354,4 @@ header a {
     justify-content: center;
     align-items: center;
 }
-
 
