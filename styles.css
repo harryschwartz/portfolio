@@ -264,12 +264,15 @@ ul li {
 /* footer */
 footer {
     margin-top: auto;
-    margin-bottom: 20px; /* Added bottom margin */
+    margin-bottom: 20px; 
 }
-
 
 footer p {
     margin: 0 0;
+}
+
+#resume {
+    margin-left: 0;
 }
 
 /* featured work */
@@ -277,7 +280,6 @@ footer p {
     background-color: transparent;
     border: none;
     margin-right: 0;
-    /* border: 1px solid blue; */
 }
 
 .arrow-button-left::before {
@@ -289,13 +291,7 @@ footer p {
     transform: rotate(-135deg);
 }
 
-/* header {
-    display: flex;
-    align-items: flex-start;
-} */
-
 header a {
-    /* border: 1px solid red; */
     padding: 0;
     text-decoration: none;
 }
@@ -304,20 +300,6 @@ header a {
 .featuredWork p {
     padding-right: 40px;
 }
-
-/* .featuredTitle {
-    background-color: #D9D9D9;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid black;
-    margin-bottom: 0;
-} */
-
-/* .featuredImgContainer {
-    border: 1px solid red;
-    width: 100%;
-} */
 
 .featuredImg {
     width: 100%;
@@ -333,10 +315,10 @@ header a {
 }
 
 .grid-item-img {
-    border: none; /* Adjust the border as needed */
+    border: none;
     text-align: center;
     margin-left: -1px;
-    object-fit: contain; /* Added value for object-fit */
+    object-fit: contain; 
 }
 
 .grid-item-img img, .grid-item-img video {

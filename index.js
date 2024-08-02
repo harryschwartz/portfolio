@@ -60,10 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// footer resume link
+document.addEventListener('DOMContentLoaded', () => {
+    const resumeButton = document.getElementById('resume');
+    resumeButton.addEventListener('click', () => {
+        window.open('assets/resume.pdf', '_blank');
+    });
+});
+
 
 // footer mailto link
 document.addEventListener('DOMContentLoaded', () => {
-    const hireMeButton = document.querySelector('footer button');
+    const hireMeButton = document.getElementById('hireMe');
     hireMeButton.addEventListener('click', () => {
         window.location.href = 'mailto:harryschwartz@berkeley.edu';
     });
