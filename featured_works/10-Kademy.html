@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Schwartz | 10-Kademy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Roboto Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- script -->
+    <script src="work.js" defer></script>
+    <!-- avoid phone # detection for mobile browser -->
+    <meta name="format-detection" content="telephone=no, email=no">
+</head>
+
+<body>
+    <header>
+        <h1>Harry Schwartz</h1>
+    </header>
+
+    <!-- Content -->
+    <section class="featuredWork">
+        <p class="featuredTitle">
+            <strong>
+                10-Kademy
+            </strong>
+            <br>
+            Built a study tool for MBA students looking to practice accounting with real 10-Ks.
+            <br>
+            <em>
+                > Hackathon Project
+                <br>
+                > 2024
+            </em>
+            <br>
+            <button onclick="window.location.href='https://10-kademy.study'" style="margin-bottom: 20px; margin-left: 0;">Try it!</button>
+
+        </p>
+
+        <img src="../assets/10-kademy.jpg" alt="" class="featuredImg">
+        <p>
+            I built this tool with three friends over the course of a weekend for UC Berkeley's biggest hackathon, Cal Hacks. 
+            We got wrecked on our accounting final. Our professor made a compelling point: 
+            you can't truly learn accounting without diving into real financial statements. 
+            To help ourselves and our classmates improve, we created a tool for practicing with actual 10-Ks.
+            <br><br>
+            Our tool helps business students develop practical skills by going beyond simplified textbook examples. 
+            By quizzing yourself with real financial statements from public companies, 
+            you build the reflexes necessary for deeper financial understanding—something you can't rely on AI for during exams.
+            Just enter a stock ticker to get started.
+        </p>
+        <div id="featuredPics" class="grid-container">
+            <div class="grid-item-img" style="grid-column: 1 / span 2;"><img src="../assets/10k1.jpeg" alt=""></div>
+            <div class="grid-item-img" style="grid-column: 1;"><img src="../assets/10k2.jpeg" alt=""></div>
+            <div class="grid-item-img" style="grid-column: 2;"><img src="../assets/10k3.jpeg" alt=""></div>
+        </div>
+
+
+        <p class="skills">#SoftwareEngineering #Hackathon #Accounting</p>
+    </section>
+    <footer>
+        <div id="buttons">
+            <button id="hireMe">Hire Me</button>
+            <!-- <button id="resume">Resume</button> -->
+        </div>        
+        <p>harryschwartz@berkeley.edu</p>
+        <p>+1 (310) 994-0586</p>
+        <p>linkedin.com/in/hschwrtz</p>
+    </footer>
+</body>
+
+</html>
