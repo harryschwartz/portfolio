@@ -231,7 +231,6 @@ body {
     gap: 0px; /* Adjust the gap as needed */
     padding-left: 40px;
     margin: 0 auto;
-    row-gap: 0;
 }
 
 .grid-container-two {
