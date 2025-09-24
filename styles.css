@@ -120,6 +120,12 @@ em {
     transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for smooth effect */
 }
 
+/* Contain images within their box without stretching */
+.work img.contain {
+    object-fit: contain;
+    background-color: white;
+}
+
 /* Desktop hover effect */
 @media (hover: hover) and (pointer: fine) {
     .work:hover img {
@@ -146,6 +152,10 @@ em {
 
 figure p, figure a {
     padding-left: 0;
+}
+
+figcaption p {
+    margin: 0;
 }
 
 figure img {
@@ -326,6 +336,24 @@ header a {
 
 .grid-item-img img, .grid-item-img video {
     width: 100%;
+}
+
+/* Workshop Wednesday grid: force square crops */
+#workshopWednesday .grid-item-img {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+#workshopWednesday .grid-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Lower the focal point for the first two Workshop Wednesday images */
+#workshopWednesday .grid-item-img:nth-child(1) img,
+#workshopWednesday .grid-item-img:nth-child(2) img {
+    object-position: center 75%;
 }
 
 .press {
